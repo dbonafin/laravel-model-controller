@@ -2,15 +2,18 @@
 
 @section('main-section')
 
-    <h1>My favourite movies</h1>
+    <h1>Laravel mysql database movies</h1>
 
-    @foreach ($movies as $movie)
-        <div>
-            <div>Title: {{ $movie->title }}</div>
-            <div>Original title: {{ $movie->original_title }}</div>
-            <div>Vote: {{ $movie->vote }}</div>
-        </div>
-        <br>
-    @endforeach
+    <div class="movies-wrapper">
+
+        @foreach ($movies as $movie)
+            <div class="movie-container">
+                <div>Title: {{ $movie->title }}</div>
+                <div>Original title: {{ $movie->original_title }}</div>
+                <div>Vote: {{ $movie->vote }}</div>
+            </div>
+        @endforeach
+
+    </div>
 
 @endsection
