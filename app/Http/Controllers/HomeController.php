@@ -10,4 +10,14 @@ class HomeController extends Controller
     public function homepage() {
         return view('homepage');
     }
+
+    public function movies() {
+        $movies = movie::all();
+
+        $data = [
+            'movies' => $movies
+        ];
+
+        return view('homepage', $data);
+    }
 }

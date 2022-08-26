@@ -1,13 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage</title>
-</head>
-<body>
-    <h1>website homepage</h1>
-    <h2>controller test</h2>
-</body>
-</html>
+@extends('layout.app')
+
+@section('main-section')
+
+    <h1>My favourite movies</h1>
+
+    @foreach ($movies as $movie)
+        <div>
+            <div>Title: {{ $movie->title }}</div>
+            <div>Original title: {{ $movie->original_title }}</div>
+            <div>Vote: {{ $movie->vote }}</div>
+        </div>
+        <br>
+    @endforeach
+
+@endsection
