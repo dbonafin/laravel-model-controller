@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>website homepage</h1>
+    <h2>controller test</h2>
 </body>
 </html>
