@@ -13,7 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','HomeController@homepage');
-
 Route::get('/','HomeController@movies');
 
